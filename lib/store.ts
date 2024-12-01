@@ -1,13 +1,22 @@
 import { create } from 'zustand'
+import { v4 as randomUUID } from 'uuid'
 
-interface Ticket {
+// Helper function to generate random integer
+const getRandomInt = (min: number, max: number): number => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+export interface Ticket {
   id: number
   eventId: number
   eventName: string
-  purchaseDate: string
+  purchaseDate: string,
+  nftId: string
 }
 
-interface AuthState {
+export interface AuthState {
+  userId: number,
+  walletAddress: string,
   isLoggedIn: boolean
   tickets: Ticket[]
   login: () => void
@@ -16,6 +25,9 @@ interface AuthState {
 }
 
 export const useAuthStore = create<AuthState>((set) => ({
+  // random userId
+  userId: getRandomInt(1, 1000),
+  walletAddress: randomUUID().slice(0, 8),
   isLoggedIn: false,
   tickets: [],
   login: () => set({ isLoggedIn: true }),

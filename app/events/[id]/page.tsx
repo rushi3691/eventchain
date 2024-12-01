@@ -2,10 +2,12 @@
 
 import { useState } from 'react'
 import { useParams } from 'next/navigation'
-import { useAuthStore } from '@/lib/store'
+import { Ticket, useAuthStore } from '@/lib/store'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { toast } from '@/hooks/use-toast'
+import { v4 as randomUUID } from 'uuid'
+
 
 export default function EventPage() {
   const { id } = useParams()
@@ -26,11 +28,12 @@ export default function EventPage() {
     // Simulate API call
     setTimeout(() => {
       setIsPurchasing(false)
-      const newTicket = {
+      const newTicket: Ticket = {
         id: Date.now(),
         eventId: Number(id),
         eventName: `Event ${id}`, // In a real app, you'd fetch the actual event name
         purchaseDate: new Date().toISOString(),
+        nftId: randomUUID().slice(0, 8),
       }
       addTicket(newTicket)
       toast({

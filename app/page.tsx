@@ -8,42 +8,42 @@ const events = [
     name: 'Coldplay Concert',
     date: '2023-12-15',
     category: 'Music',
-    image: 'https://huad34u4m119mhe99.lite.vusercontent.net/placeholder.svg?height=200&width=300'
+    image: 'https://www.hindustantimes.com/ht-img/img/2024/09/19/1600x900/MUSIC-COLDPLAY--0_1700663190034_1726733066717.JPG'
   },
   {
     id: 2,
     name: 'Diljit Dosanjh Live',
     date: '2023-11-30',
     category: 'Music',
-    image: 'https://huad34u4m119mhe99.lite.vusercontent.net/placeholder.svg?height=200&width=300'
+    image: 'https://www.financialexpress.com/wp-content/uploads/2024/09/Diljit-Dosanjh.jpg'
   },
   {
     id: 3,
     name: 'Stand-up Comedy Night',
     date: '2023-12-05',
     category: 'Comedy',
-    image: 'https://huad34u4m119mhe99.lite.vusercontent.net/placeholder.svg?height=200&width=300'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqQ6OzR0Z93a6B-wpL7BeihL6m-t0j9vx3A&s'
   },
   {
     id: 4,
     name: 'Local Theater Play',
     date: '2023-12-10',
     category: 'Theater',
-    image: 'https://huad34u4m119mhe99.lite.vusercontent.net/placeholder.svg?height=200&width=300'
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/71/Palais_Garnier._December_5%2C_2010.jpg"
   },
   {
     id: 5,
     name: 'EDM Festival',
     date: '2024-01-15',
     category: 'Music',
-    image: 'https://huad34u4m119mhe99.lite.vusercontent.net/placeholder.svg?height=200&width=300'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vvBqiYGLZrJbrPwePd1PjmQFuLXt44Rmrw&s'
   },
   {
     id: 6,
     name: 'Improv Show',
     date: '2023-12-20',
     category: 'Comedy',
-    image: 'https://huad34u4m119mhe99.lite.vusercontent.net/placeholder.svg?height=200&width=300'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVlrIvJ53ZKGJHJIw8E3rYnmxNO3luwLemw&s'
   }
 ]
 

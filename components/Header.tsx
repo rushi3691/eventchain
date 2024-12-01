@@ -25,7 +25,7 @@ export default function Header() {
     <header className="bg-white/80 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
-          <h1 className="text-2xl font-bold text-primary">EventHub</h1>
+          <h1 className="text-2xl font-bold text-primary">Evento</h1>
         </Link>
         <nav className="hidden md:flex space-x-4">
           <Button variant="ghost" asChild><Link href="/">Home</Link></Button>

@@ -28,6 +28,8 @@ export default function EventCard({ id, name, date, image }: EventCardProps) {
               alt={name} 
               layout="fill"
               objectFit="cover"
+              // height={200}
+              // width={300}
             />
           </div>
           <div className="p-4">
